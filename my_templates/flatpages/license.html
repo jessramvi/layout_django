@@ -1,7 +1,15 @@
-{% load flatpages %}
-{% get_flatpages as flatpages %}
-<ul>
-    {% for page in flatpages %}
-        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-    {% endfor %}
-</ul>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}/style.css">
+		<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}/css/bootstrap-responsive.css">
+		<title>Licencia {{ flatpage.title }}</title>
+	</head>
+
+	<body>
+
+		{{ flatpage.content }}
+
+	</body>
+</html>

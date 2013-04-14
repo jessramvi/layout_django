@@ -68,7 +68,8 @@ STATIC_URL = '/home/jess/DSI/dsi_p6/mysite/css'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    "/home/jess/DSI/dsi_p6/mysite/css"
+    "/home/jess/DSI/dsi_p6/mysite/static/css",
+    "/home/jess/DSI/dsi_p6/mysite/static/bootstrap",
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -109,7 +110,7 @@ ROOT_URLCONF = 'mysite.urls'
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
 TEMPLATE_DIRS = (
-    '/home/jess/DSI/mytemplates/',
+    '/home/jess/DSI/my_templates/',
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -127,7 +128,7 @@ INSTALLED_APPS = (
     'polls',
     'django.contrib.flatpages',
     'lettuce.django',
-    'django_nose', #add
+    'django_nose', 
      #add
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',

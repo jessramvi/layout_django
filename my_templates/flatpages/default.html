@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
+
+		<title>{% block title %} Demo App {% endblock %}</title>
+		{% block css %}<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}style.css">{% endblock %}
+		<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}/css/bootstrap-responsive.css">
 		<title>{{ flatpage.title }}</title>
 	</head>
 
-<body>
-	{{ flatpage.content }}
-</body>
+	<body>
+
+		{{ flatpage.content }}
+
+	</body>
 
 </html>
